@@ -1,2 +1,2 @@
 # Eu sabo fazer uns negóco ai!...
-![Bah](https://em-content.zobj.net/source/google/439/distorted-face_1faea.png)
+![Bah]([https://em-content.zobj.net/source/google/439/distorted-face_1faea.png](https://symbl-cdn.com/i/webp/da/f2d2b00f8e1c45a709e1db5019ccaf.webp))
