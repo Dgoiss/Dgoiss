@@ -1,158 +1,423 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dgoiss - Acervo Pessoal</title>
+    <title>Acervo Musical | Dgoiss</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #666565; display: flex; align-items: center; align-self: center; align-content: center; background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://wallpapercave.com/wp/wp4560380.jpg'); background-size: cover; background-position: center; background-blend-mode: darken;">
-    <div style="align-items: center; align-self: center; align-content: center; width: 100%; margin: 0 10% 0 10%;">
-        <header style="height: fit-content; width: 100%;">
-            <div>
-                <h1 style="color: #8d697a;font-family: 'Times New Roman', Times, serif; font-size: 80px; line-height: 1; margin: 0; padding: 0;">Acervo Musical Pessoal</h1>
-            </div>
-            <div style="display: flex; width: 100%; gap: 10px; align-items: center; text-align: center; align-content: center; color: #8d697a; font-size: 20px;">
-                <div style="width: auto;">
-                    <h2>🖤</h2>
-                </div>
 
-                <div style="width: auto;">
-                    <a href="https://github.com/Dgoiss" style="color: #8d697a;">
-                        <h3>- por Dgoiss</h3>
-                    </a>
-                </div>
+<body>
 
-                <div style="width: auto;">
-                    <a href="https://github.com/Dgoiss">
-                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="30" height="30">
-                    </a>
-                </div>
-            </div>
-        </header>
-
-        <div style="text-align: center; font-family: 'Times New Roman', Times, serif; font-size: 30px; padding-bottom: 2%;">
-            <a href="#thebeatles" style="color: #d08159">The Beatles</a>
-            <a href="#pinkfloyd" style="color: #b4202a">Pink Floyd</a>
-            <a href="#muse" style="color: #ee8695">Muse</a>
-            <a href="#rammstein" style="color: #dabca7">Rammstein</a>
-            <a href="#arcticmonkeys" style="color: #f0f6f0">Arctic Monkeys</a>
+    <header>
+        <div class="header-title">
+            <h1>Acervo Musical</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#thebeatles">Beatles</a></li>
+                <li><a href="#pinkfloyd">Pink Floyd</a></li>
+                <li><a href="#muse">Muse</a></li>
+                <li><a href="#rammstein">Rammstein</a></li>
+                <li><a href="#arcticmonkeys">Arctic Monkeys</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div id="thebeatles" style="color: #d08159; background-color: #0d2b45; padding: 10%; background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i8.amplience.net/i/naras/the-beatles_MI0003995354-MN0000754032'); background-size: cover; background-position: center; background-blend-mode: soft-light; border: solid; padding: 1%; border-radius: 5px; border-style: double;">
-            <div style="display: flex; flex-direction: column; margin-top: 4%;">
-                <div>
-                    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 60px; line-height: 1; margin: 0; padding: 0;">The Beatles</h1>
+    <main>
+        <section class="hero">
+            <h1>Músicas Favoritas</h1>
+            <p>Uma curadoria pessoal por Dgoiss</p>
+        </section>
+
+        <!-- THE BEATLES -->
+        <section id="thebeatles" class="artist-section"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i8.amplience.net/i/naras/the-beatles_MI0003995354-MN0000754032');">
+            <div class="section-content">
+                <h2 class="section-title">The Beatles</h2>
+                <div class="song-grid">
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Eleanor Rigby</h3>
+                            <p class="song-quote">"Ah, olhe todas essas pessoas solitárias!"</p>
+                            <p class="song-meta">Paul McCartney • Revolver • 1966</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/5GjPQ0eI7AgmOnADn1EO6Q" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>While My Guitar Gently Weeps</h3>
+                            <p class="song-quote">"Enquanto minha guitarra chora baixinho"</p>
+                            <p class="song-meta">George Harrison • The Beatles (White Album) • 1968</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/389QX9Q1eUOEZ19vtzzI9O" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Something</h3>
+                            <p class="song-quote">"Você está me perguntando se meu amor vai crescer..."</p>
+                            <p class="song-meta">George Harrison • Abbey Road • 1969</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/0pNeVovbiZHkulpGeOx1Gj" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>With a Little Help From My Friends</h3>
+                            <p class="song-quote">"O que você pensaria se eu cantasse desafinado?"</p>
+                            <p class="song-meta">Paul McCartney • Sgt. Pepper's • 1967</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/2RnPATK99oGOZygnD2GTO6" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>I Me Mine</h3>
+                            <p class="song-quote">"Durante todo o dia, eu estou sozinho"</p>
+                            <p class="song-meta">George Harrison • Let It Be • 1970</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/2BMqay80iBzZTa608Y1eG1" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div >
-                <hr style="border: 2px solid #203c56;">
-                <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px;">Eleanor Rigby</h1>
-                <h2 style="font-size: 20px; color: #8d697a; font-style: italic;">"Ah, olhe todas essas pessoas solitárias!"</h2>
-                <h3 style="color: #544e68; font-size: 15px;">Paul Mccartney - Revolver - 1966</h3>
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5GjPQ0eI7AgmOnADn1EO6Q?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-
-            <div>
-                <hr style="border: 2px solid #d08159;">
-                <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px;">While My Guitar Gently Weeps</h1>
-                <h2 style="font-size: 20px; color: #8d697a; font-style: italic;">"Enquanto minha guitarra chora baixinho"</h2>
-                <h3 style="color: #544e68; font-size: 15px;">George Harrison - The Beatles(White album) - 1968</h3>
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/389QX9Q1eUOEZ19vtzzI9O?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-
-            <div>
-                <hr style="border: 2px solid #d08159;">
-                <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px;">Something</h1>
-                <h2 style="font-size: 20px; color: #8d697a; font-style: italic;"> "Você está me perguntando se meu amor vai crescer, eu não sei, eu não sei" </h2>
-                <h3 style="color: #544e68; font-size: 15px;">George Harrison - Abbey Road - 1969</h3>
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0pNeVovbiZHkulpGeOx1Gj?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-
-            <div>
-                <hr style="border: 2px solid #d08159;">
-                <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px;">With a Little Help From My Friends</h1>
-                <h2 style="font-size: 20px; color: #8d697a; font-style: italic;">"O que você pensaria se eu cantasse desafinado?"</h2>
-                <h3 style="color: #544e68; font-size: 15px;">Paul Mccartney - Sgt. Pepper's Lonely Hearts Club Band - 1967</h3>
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2RnPATK99oGOZygnD2GTO6?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-
-            <div>
-                <hr style="border: 2px solid #d08159;">
-                <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px;">I Me Mine</h1>
-                <h2 style="font-size: 20px; color: #8d697a; font-style: italic;">"Durante todo o dia, eu estou sozinho"</h2>
-                <h3 style="color: #544e68; font-size: 15px;">George Harrison - Let It Be - 1970</h3>
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2BMqay80iBzZTa608Y1eG1?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-        </div>
-
-        <div id="pinkfloyd" style="color: #b4202a; background-color:#20202b; background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://i0.wp.com/maquinadeescrever.org/wp-content/uploads/2016/11/pf68-e1480070915442.jpg?fit=1200%2C994&ssl=1'); background-size: cover; background-position: center; background-blend-mode: soft-light; border: solid; padding: 1%; border-radius: 5px; border-style: double;">
-            <div style="display: flex; flex-direction: column; margin-top: 4%;">
-                <div>
-                    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 60px; line-height: 1; margin: 0; padding: 0;">Pink Floyd</h1>
+        <!-- PINK FLOYD -->
+        <section id="pinkfloyd" class="artist-section"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://i0.wp.com/maquinadeescrever.org/wp-content/uploads/2016/11/pf68-e1480070915442.jpg?fit=1200%2C994&ssl=1');">
+            <div class="section-content">
+                <h2 class="section-title">Pink Floyd</h2>
+                <div class="song-grid">
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Shine On You Crazy Diamond</h3>
+                            <p class="song-quote">"Remember when you were young? You shone like the Sun"</p>
+                            <p class="song-meta">Waters, Wright, Gilmour • Wish You Were Here • 1975</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/6pnwfWyaWjQiHCKTiZLItr" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Wish You Were Here</h3>
+                            <p class="song-quote">"How I wish, how I wish you were here"</p>
+                            <p class="song-meta">Gilmour, Waters • Wish You Were Here • 1975</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/6mUdeYlO6h21YVjU4dD60f" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Comfortably Numb</h3>
+                            <p class="song-quote">"There is no pain you are receding..."</p>
+                            <p class="song-meta">Gilmour, Waters • The Wall • 1979</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/5HNCy40Ni5BZJFw1TKzRsC" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Time</h3>
+                            <p class="song-quote">"Ticking away the moments that make up a dull day"</p>
+                            <p class="song-meta">Mason, Waters, Wright, Gilmour • DSOTM • 1973</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/3TO7bBrDJrQbga75l2b48q" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Money</h3>
+                            <p class="song-quote">"Money, get away. Get a good job with good pay..."</p>
+                            <p class="song-meta">Roger Waters • DSOTM • 1973</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/0Idr92zJ62J5s7u2eY5D1h" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div >
-                <hr style="border: 2px solid #fffc40;">
-                <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 40px; color: #14a02e;">Shine On You Crazy Diamond</h1>
-                <h2 style="font-size: 30px; color: #285cc4; font-style: italic;">"Remember when you were young? You shone like the Sun"</h2>
-                <h3 style="color: #793a80; font-size: 20px;">Roger Waters, Richard Wright, David Gilmour - Wish You Were Here - 1975</h3>
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6pnwfWyaWjQiHCKTiZLItr?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-
-        </div>
-
-        <div id="muse" style="color: #771046; background-color: #1e1645; background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://cdn-images.dzcdn.net/images/artist/cd7c5861be0009d3b75d4d3c069317a7/1900x1900-000000-80-0-0.jpg'); background-size: cover; background-position: center; background-blend-mode: soft-light; border: solid; padding: 1%; border-radius: 5px; border-style: double;">
-            <div style="display: flex; flex-direction: column; margin-top: 4%;">
-                <div>
-                    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 60px; line-height: 1; margin: 0; padding: 0;">Muse</h1>
+        <!-- MUSE -->
+        <section id="muse" class="artist-section"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://cdn-images.dzcdn.net/images/artist/cd7c5861be0009d3b75d4d3c069317a7/1900x1900-000000-80-0-0.jpg');">
+            <div class="section-content">
+                <h2 class="section-title">Muse</h2>
+                <div class="song-grid">
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Supermassive Black Hole</h3>
+                            <p class="song-quote">"Uh-ah, você incendeia a minha alma"</p>
+                            <p class="song-meta">Matt Bellamy • Black Holes • 2006</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/3lPr8ghNDBLc2uZovNyLs9" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Hysteria</h3>
+                            <p class="song-quote">"I want it now, I want it now. Give me your heart and your soul"</p>
+                            <p class="song-meta">Muse • Absolution • 2003</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/1Dq78gP5r63R3v8GZ1t2gD" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Knights of Cydonia</h3>
+                            <p class="song-quote">"No one's gonna take me alive!"</p>
+                            <p class="song-meta">Muse • Black Holes • 2006</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/7xPH9F53dJ06Y05JpX1Q4Z" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Uprising</h3>
+                            <p class="song-quote">"They will not force us, they will stop degrading us"</p>
+                            <p class="song-meta">Muse • The Resistance • 2009</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/4VqPOruhp5EdPTeR92ha62" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Starlight</h3>
+                            <p class="song-quote">"I'll never let you go if you promise not to fade away"</p>
+                            <p class="song-meta">Muse • Black Holes • 2006</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/350kK5jWv2tXJzB4qU4X51" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div >
-                <hr style="border: 2px solid #3e0b66">
-                <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 40px;">Supermassive Black Hole</h1>
-                <h2 style="font-size: 30px; color: #b01528; font-style: italic;">"Uh-ah, você incendeia a minha alma"</h2>
-                <h3 style="color: #e46131; font-size: 20px;">Matt Bellamy - Black Holes and Revelations - 2006</h3>
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3lPr8ghNDBLc2uZovNyLs9?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-
-        </div>
-
-        <div id="rammstein" style="color: #dabca7; background-color: #121418; background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://lh3.googleusercontent.com/5n-50qHOrMGyff90gyOB-6BXtoBTXQlBojztu06xVhk1_PhdFVF4XB_0wzjrWMiLVA0USgv-san0j0k=w2880-h1200-p-l90-rj'); background-size: cover; background-position: center; background-blend-mode: soft-light; border: solid; padding: 1%; border-radius: 5px; border-style: double;">
-            <div style="display: flex; flex-direction: column; margin-top: 4%;">
-                <div>
-                    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 60px; line-height: 1; margin: 0; padding: 0;">Rammstein</h1>
+        <!-- RAMMSTEIN -->
+        <section id="rammstein" class="artist-section"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://lh3.googleusercontent.com/5n-50qHOrMGyff90gyOB-6BXtoBTXQlBojztu06xVhk1_PhdFVF4XB_0wzjrWMiLVA0USgv-san0j0k=w2880-h1200-p-l90-rj');">
+            <div class="section-content">
+                <h2 class="section-title">Rammstein</h2>
+                <div class="song-grid">
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Sonne</h3>
+                            <p class="song-quote">"Ela é a estrela mais brilhante de todas..."</p>
+                            <p class="song-meta">Rammstein • Mutter • 2001</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/3gVhsZtseYtY1fMuyYq06F" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Du Hast</h3>
+                            <p class="song-quote">"Du, du hast, du hast mich!"</p>
+                            <p class="song-meta">Rammstein • Sehnsucht • 1997</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/52iH0m7004fJ6Z2pGvF4kQ" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Deutschland</h3>
+                            <p class="song-quote">"Deutschland – mein Herz in Flammen"</p>
+                            <p class="song-meta">Rammstein • Rammstein • 2019</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/2bH13sQvJc3Xv6c25nB6QY" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Ich Will</h3>
+                            <p class="song-quote">"Ich will eure Hände sehen!"</p>
+                            <p class="song-meta">Rammstein • Mutter • 2001</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/6y57c8gJ5sE135c3453a99" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Engel</h3>
+                            <p class="song-quote">"Gott weiß, ich will kein Engel sein"</p>
+                            <p class="song-meta">Rammstein • Sehnsucht • 1997</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/2t2Y79t3gS6n5DqM6J8v3c" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div >
-                <hr style="border: 2px solid #2c3c3f;">
-                <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 40px;">Sonne</h1>
-                <h2 style="font-size: 30px; color: #5c4c58; font-style: italic;">"Ela é a estrela mais brilhante de todas e nunca cairá do céu"</h2>
-                <h3 style="color: #2c3c3f; font-size: 20px;">Rammstein - Mutter - 2001</h3>
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3gVhsZtseYtY1fMuyYq06F?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-
-        </div>
-
-        <div id="arcticmonkeys" style="color: #f0f6f0; background-color: #222323; background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.opovo.com.br/_midias/jpg/2022/04/27/arctic_monkeys_shows_no_brasil__1_-18635926.jpg'); background-size: cover; background-position: center; background-blend-mode: soft-light; border: solid; padding: 1%; border-radius: 5px; border-style: double;">
-            <div style="display: flex; flex-direction: column; margin-top: 4%;">
-                <div>
-                    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 60px; line-height: 1; margin: 0; padding: 0;">Arctic Monkeys</h1>
+        <!-- ARCTIC MONKEYS -->
+        <section id="arcticmonkeys" class="artist-section"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.opovo.com.br/_midias/jpg/2022/04/27/arctic_monkeys_shows_no_brasil__1_-18635926.jpg');">
+            <div class="section-content">
+                <h2 class="section-title">Arctic Monkeys</h2>
+                <div class="song-grid">
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Do I Wanna Know?</h3>
+                            <p class="song-quote">"Você está com as bochechas coradas?"</p>
+                            <p class="song-meta">Alex Turner • AM • 2013</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/5FVd6KXrgO9B3JPmC8OPst" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>R U Mine?</h3>
+                            <p class="song-quote">"Are you mine tomorrow? Or just mine tonight?"</p>
+                            <p class="song-meta">Arctic Monkeys • AM • 2013</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/2AT1GZ3VlS6iJ8zP7o0J2T" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>Fluorescent Adolescent</h3>
+                            <p class="song-quote">"You used to get it in your fishnets, now you only get it in your
+                                nightdress"</p>
+                            <p class="song-meta">Arctic Monkeys • Favourite Worst Nightmare • 2007</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/2x8o18i4sQG2u73v7g5k1D" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>505</h3>
+                            <p class="song-quote">"I'm going back to 505. If it's a seven-hour flight or a forty-five
+                                minute drive"</p>
+                            <p class="song-meta">Arctic Monkeys • Favourite Worst Nightmare • 2007</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/58ge6E0lRjG9c882L1R2r7" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="song-card">
+                        <div class="song-info">
+                            <h3>I Bet You Look Good on the Dancefloor</h3>
+                            <p class="song-quote">"Stop making the eyes at me, I'll stop making the eyes at you"</p>
+                            <p class="song-meta">Arctic Monkeys • WPSIATWIN • 2006</p>
+                        </div>
+                        <div class="spotify-embed">
+                            <iframe src="https://open.spotify.com/embed/track/3dq1xtZ0s6WlJ8tJ8G8V8j" width="100%"
+                                height="152" frameBorder="0"
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+    </main>
 
-            <div >
-                <hr style="border: 2px solid #f0f6f0;">
-                <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 40px;">Do I Wanna Know?</h1>
-                <h2 style="font-size: 30px; color: #f0f6f0; font-style: italic;">"Você está com as bochechas coradas?"</h2>
-                <h3 style="color: #f0f6f0; font-size: 20px;">Alex Turner - AM - 2013</h3>
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5FVd6KXrgO9B3JPmC8OPst?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
+    <footer>
+        <p>Acervo pessoal por <a href="https://github.com/Dgoiss">Dgoiss</a></p>
+        <p>© 2026 - Desenvolvido com ❤️ para os amantes de música</p>
+    </footer>
 
-        </div>
-    </div>
 </body>
+
 </html>
