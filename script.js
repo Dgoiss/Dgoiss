@@ -33,9 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
             modalAlbum.innerText = album;
             modalYear.innerText = year;
             
-            // Trocar o player para o modo "tall" (352px)
-            const tallSpotifySrc = spotifySrc.replace('height=180', 'height=352');
-            modalSpotify.innerHTML = `<iframe src="${tallSpotifySrc}" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+            // Injetar o player no modal com altura total (352px)
+            modalSpotify.innerHTML = `<iframe src="${spotifySrc}" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
 
             // Definir cor de destaque do modal baseada no artista
             const accentColor = getComputedStyle(card.closest('.artist-section')).getPropertyValue('--accent');
