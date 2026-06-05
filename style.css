@@ -219,10 +219,123 @@ footer a {
 #muse { --accent: #ee8695; color: var(--accent); }
 #rammstein { --accent: #dabca7; color: var(--accent); }
 #arcticmonkeys { --accent: #f0f6f0; color: var(--accent); }
+#beatles-albums { --accent: #c1a97f; color: var(--accent); }
 
-@media (max-width: 1200px) {
-    .song-grid {
-        grid-template-columns: repeat(3, 1fr);
+.album-ranking-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.album-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 18px;
+    padding: 1rem;
+    transition: var(--transition);
+}
+
+.album-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.album-card-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: flex-start;
+}
+
+.album-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 100%;
+}
+
+.album-header {
+    display: flex;
+    align-items: flex-start;
+}
+
+.album-title-group {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+}
+
+.album-rank {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.album-card-info h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.2;
+    flex: 1;
+}
+
+.album-rating {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--accent);
+    background: rgba(193, 169, 127, 0.15);
+    padding: 0.2rem 0.6rem;
+    border-radius: 8px;
+    flex-shrink: 0;
+    min-width: 45px;
+    text-align: center;
+}
+
+.album-year {
+    opacity: 0.7;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.album-player {
+    width: 100%;
+}
+
+.album-player-placeholder {
+    height: 120px;
+    border: 2px dashed rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    background: rgba(0, 0, 0, 0.25);
+    font-size: 0.85rem;
+}
+
+.album-player iframe {
+    width: 100%;
+    height: 152px;
+    border: none;
+    border-radius: 12px;
+}
+
+@media (max-width: 900px) {
+    .album-card-inner {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .album-card {
+        padding: 1.2rem;
     }
 }
 
